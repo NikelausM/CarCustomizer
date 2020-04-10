@@ -15,6 +15,9 @@ class CreateAutomobilesTable extends Migration
     {
         Schema::create('automobiles', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('brand');
+            $table->string('model');
+            $table->unsignedInteger('year');
             $table->timestamps();
         });
     }

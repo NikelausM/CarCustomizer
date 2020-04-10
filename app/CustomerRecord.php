@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\DesiredAutomobile;
 
 /**
 * Provides data fields and methods to create a PHP data-type representing a Customer Record resource in a PHP application.
@@ -24,10 +25,11 @@ class CustomerRecord extends Model
 	protected $fillable = [
 		'name',
 		'gender',
-		'billing_address',
-		'telephonesDuringDay',
-		'telephonesDuringEvening',
+		'billingAddress',
+		'telephoneDuringDay',
+		'telephoneDuringEvening',
 		'email',
+		'user_id',
 	];
 
 	/**

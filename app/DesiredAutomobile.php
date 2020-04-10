@@ -15,18 +15,21 @@ class DesiredAutomobile extends Model
 	* The name of the table that corresponds to this User
 	* @var string
 	*/
-	protected $table = "automobiles";
+	protected $table = "desired_automobiles";
 
 	/**
 	* The fillable table attributes of this User
 	* @var array(string)
 	*/
 	protected $fillable = [
-		'automobile_id',
+		'exteriorColorPaletteId',
+		'interiorColorPaletteId',
 		'listedSalePrice',
 		'actualSalePrice',
 		'discount',
-		'discountRational',
+		'discountRationale',
+		'automobileId',
+		'customerRecordId'
 	];
 
 	/**

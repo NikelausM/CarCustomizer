@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\CustomerRecord;
 
 class CustomerRecordsTableSeeder extends Seeder
 {
@@ -11,6 +12,13 @@ class CustomerRecordsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+      CustomerRecord::create(array(
+        'name' => 'Nicolas',
+    		'gender' => 'male',
+    		'billing_address' => '123 University Drive Calgary, AB, Canada',
+    		'telephone_during_day' => 4031255569,
+    		'telephone_during_evening' => 4035587895,
+    		'email' => 'nick@gmail.com',
+      ));
     }
 }

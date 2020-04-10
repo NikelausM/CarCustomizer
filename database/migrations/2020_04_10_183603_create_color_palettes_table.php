@@ -15,7 +15,13 @@ class CreateColorPalettesTable extends Migration
     {
         Schema::create('color_palettes', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('automobile_id');
             $table->timestamps();
+        });
+
+        // Add Foreign keys
+        Schema::table('color_palettes', function (Blueprint $table) {
+          $table->foreign('automobile_id')->references('id')->on('automobiles')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
