@@ -33,12 +33,8 @@ class Automobile extends Model
 	*/
 	public $timestamps = true;
 
-	public function interiorColorPalette() {
-
-	}
-
-	public function exteriorColorPalette() {
-
+	public function colorPalette() {
+		return $this->hasOne('\App\ColorPalette', 'automobile_id', 'id');
 	}
 
 	public function desiredAutomobiles() {

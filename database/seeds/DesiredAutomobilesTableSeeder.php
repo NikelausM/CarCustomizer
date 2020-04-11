@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\DesiredAutomobile;
 
-class DesiredAutomobileTableSeeder extends Seeder
+class DesiredAutomobilesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,8 +14,8 @@ class DesiredAutomobileTableSeeder extends Seeder
     {
       // Insert DesiredAutomobile data into Desured_Automobile table
       DesiredAutomobile::create(array(
-          'exterior_color_palette_id' => 2,
-          'interior_color_palette_id' => 2,
+          'exterior_color_id' => 2,
+          'interior_color_id' => 2,
           'listed_sale_price' => 299869.98,
           'actual_sale_price' => 299769.98,
           'discount' => 100,

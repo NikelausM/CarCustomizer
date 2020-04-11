@@ -22,8 +22,8 @@ class DesiredAutomobile extends Model
 	* @var array(string)
 	*/
 	protected $fillable = [
-		'exteriorColorPaletteId',
-		'interiorColorPaletteId',
+		'exteriorColorId',
+		'interiorColorId',
 		'listedSalePrice',
 		'actualSalePrice',
 		'discount',
@@ -38,12 +38,12 @@ class DesiredAutomobile extends Model
 	*/
 	public $timestamps = true;
 
-	public function exteriorColorPalette() {
-		return $this->hasOne('\App\ExteriorColorPalette', 'id', 'exterior_color_palette_id');
+	public function exteriorColor() {
+		return $this->hasOne('\App\ExteriorColor', 'id', 'exterior_color_id');
 	}
 
-	public function interiorColorPalette() {
-		return $this->hasOne('\App\InteriorColorPalette', 'id', 'interior_color_palette_id');
+	public function interiorColor() {
+		return $this->hasOne('\App\InteriorColor', 'id', 'interior_color_id');
 	}
 
 	public function automobile() {

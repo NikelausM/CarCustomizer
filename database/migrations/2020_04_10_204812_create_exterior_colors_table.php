@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInteriorColorPalettesTable extends Migration
+class CreateExteriorColorsTable extends Migration
 {
   /**
   * Run the migrations.
@@ -13,7 +13,7 @@ class CreateInteriorColorPalettesTable extends Migration
   */
   public function up()
   {
-    Schema::create('interior_color_palettes', function (Blueprint $table) {
+    Schema::create('exterior_colors', function (Blueprint $table) {
       $table->increments('id');
       $table->string('url');
       $table->unsignedInteger('color_id');
@@ -22,7 +22,7 @@ class CreateInteriorColorPalettesTable extends Migration
     });
 
     // Add Foreign keys
-    Schema::table('interior_color_palettes', function (Blueprint $table) {
+    Schema::table('exterior_colors', function (Blueprint $table) {
       $table->foreign('color_id')->references('id')->on('colors')->onUpdate('cascade')->onDelete('cascade');
       $table->foreign('color_palette_id')->references('id')->on('color_palettes')->onUpdate('cascade')->onDelete('cascade');
     });
@@ -35,6 +35,6 @@ class CreateInteriorColorPalettesTable extends Migration
   */
   public function down()
   {
-    Schema::dropIfExists('interior_color_palettes');
+    Schema::dropIfExists('exterior_colors');
   }
 }

@@ -15,8 +15,8 @@ class CreateDesiredAutomobilesTable extends Migration
   {
     Schema::create('desired_automobiles', function (Blueprint $table) {
       $table->increments('id');
-      $table->unsignedInteger('exterior_color_palette_id');
-      $table->unsignedInteger('interior_color_palette_id');
+      $table->unsignedInteger('exterior_color_id');
+      $table->unsignedInteger('interior_color_id');
       $table->unsignedInteger('listed_sale_price');
       $table->unsignedInteger('actual_sale_price');
       $table->unsignedInteger('discount');
@@ -30,8 +30,8 @@ class CreateDesiredAutomobilesTable extends Migration
     Schema::table('desired_automobiles', function (Blueprint $table) {
       $table->foreign('automobile_id')->references('id')->on('automobiles')->onUpdate('cascade')->onDelete('cascade');
       $table->foreign('customer_record_id')->references('id')->on('customer_records')->onUpdate('cascade')->onDelete('cascade');
-      $table->foreign('exterior_color_palette_id')->references('id')->on('exterior_color_palettes')->onUpdate('cascade')->onDelete('cascade');
-      $table->foreign('interior_color_palette_id')->references('id')->on('interior_color_palettes')->onUpdate('cascade')->onDelete('cascade');
+      $table->foreign('exterior_color_id')->references('id')->on('exterior_colors')->onUpdate('cascade')->onDelete('cascade');
+      $table->foreign('interior_color_id')->references('id')->on('interior_colors')->onUpdate('cascade')->onDelete('cascade');
     });
   }
 

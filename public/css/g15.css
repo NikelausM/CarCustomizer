@@ -22,14 +22,13 @@
             }
 
             .masthead a {
-                background-color: red;
-                font-size: 25px;
-                width: 100px;
+
+                height: 100%;
+                width: 100%;
                 border: 5px;
             }
 
             .masthead a:hover {
-                background-color:#9b1200;
             }
 
 
@@ -51,4 +50,8 @@
       				border-radius: 25px;
       				border: 2px solid rgba(0, 0, 0, 0.15);
       				padding: 10px
+            }
+
+            .modal-content {
+              width:50%;
             }

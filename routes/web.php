@@ -28,16 +28,15 @@ Route::prefix('user/')->middleware('auth')->group(function () {
 		Route::get('/', ['uses' => 'UserController@show', 'as' => 'user.show']);
 
 		Route::post('/', ['uses' => 'UserController@update', 'as' => 'user.update']);
-
-		// Routes for specific post of community
-		Route::prefix('post/{post}')->group(function () {
-			Route::get('/', ['uses' => 'PostController@showUserPost', 'as' => 'post.showUserPost']);
-		});
+		
 	});
 });
 
-// Search routes accessible to logged-in users
-Route::prefix('search/')->middleware('auth')->group(function () {
-	Route::get('/', ['uses' => 'SearchController@index', 'as' => 'search.index']);
-	Route::get('/search', ['uses' => 'SearchController@search', 'as' => 'search.search']);
+
+Route::resource('DesiredAutomobile', 'DesiredAutomobileController')->middleware('auth');
+Route::prefix("/DesiredAutomobiles")->middleware('auth')->group(function () {
+	Route::prefix("/{DesiredAutomobile}")->group(function () {
+		Route::post('/updateExteriorColor', ['uses' => 'DesiredAutomobileController@updateExteriorColor', 'as' => 'DesiredAutomobiles.updateExteriorColor']);
+		Route::post('/updateInteriorColor', ['uses' => 'DesiredAutomobileController@updateInteriorColor', 'as' => 'DesiredAutomobiles.updateInteriorColor']);
+	});
 });
