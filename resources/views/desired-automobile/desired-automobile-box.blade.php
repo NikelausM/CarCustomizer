@@ -20,7 +20,7 @@
 		<div class="thumbnail shadow">
 			<div>
 				<a target="_blank" href={{$desiredAutomobile->exteriorColor->url}}>
-					<img style="max-width:100%; max-height:100%" src={{$desiredAutomobile->exteriorColor->url}} alt="exteriorColor">
+					<img src={{$desiredAutomobile->exteriorColor->url}} alt="exteriorColor">
 				</a>
 			</div>
 			<div class="caption">
@@ -33,7 +33,7 @@
 		<div class="thumbnail shadow">
 			<div>
 				<a target="_blank" href={{$desiredAutomobile->interiorColor->url}}>
-					<img style="max-width:100%; max-height:100%"  src={{$desiredAutomobile->interiorColor->url}} alt="interiorColor">
+					<img  src={{$desiredAutomobile->interiorColor->url}} alt="interiorColor">
 				</a>
 			</div>
 			<div class="caption">

@@ -52,6 +52,17 @@
       				padding: 10px
             }
 
-            .modal-content {
-              width:50%;
+            .modal-content-small {
+              width:500px;
+            }
+
+            .modal-title {
+              text-align: center;
+              font-weight: bold
+            }
+
+            .masthead img {
+              max-width:100%;
+              max-height:100%;
+              border-radius: 25px;
             }

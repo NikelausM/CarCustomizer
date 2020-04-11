@@ -1,9 +1,9 @@
 <!----Sign up/Log in Popup---->
 <div class="modal color-modal fade" id="exteriorColorPaletteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content modal-content-small">
       <div class="modal-header">
-      	<h5 class="modal-title" id="exampleModalLabel" style="text-align: center; font-weight: bold">Exterior Colors</h5>
+      	<h5 class="modal-title" id="exampleModalLabel">Exterior Colors</h5>
       	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
       	  <span aria-hidden="true">&times;</span>
       	</button>
@@ -23,9 +23,9 @@
 
 <div class="modal fade" id="interiorColorPaletteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content modal-content-small">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center; font-weight: bold">Interior Colors</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Interior Colors</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -6102,7 +6102,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 50%;
     margin: 1.75rem auto;
   }
 
@@ -10650,6 +10650,5 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-  
-}
 
+}
