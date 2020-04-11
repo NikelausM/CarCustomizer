@@ -8,7 +8,6 @@
 <title>Car Customizer</title>
 
 <!-- Fonts -->
-<!--link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet"-->
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
 <!-- Styles -->

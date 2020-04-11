@@ -24,7 +24,7 @@
 				</a>
 			</div>
 			<div class="caption">
-				<p style="text-align: center; font-weight: bold">Exterior Color: {{$desiredAutomobile->exteriorColor->color->name}}</p>
+				<p class="text-center font-weight-bold">Exterior Color: {{$desiredAutomobile->exteriorColor->color->name}}</p>
         <button style="margin-top: 5px;" class="btn btn-primary" type="submit" href="#exteriorColorPaletteModal" data-toggle="modal">Exterior Color Palette</button>
 			</div>
 		</div>
@@ -37,7 +37,7 @@
 				</a>
 			</div>
 			<div class="caption">
-				<p style="text-align: center; font-weight: bold">Interior Color: {{$desiredAutomobile->interiorColor->color->name}}</p>
+				<p class="text-center font-weight-bold">Interior Color: {{$desiredAutomobile->interiorColor->color->name}}</p>
         <button style="margin-top: 5px;" class="btn btn-primary" type="submit" href="#interiorColorPaletteModal" data-toggle="modal">Interior Color Palette</button>
 			</div>
 		</div>
