@@ -19,6 +19,9 @@ class CustomerRecordsTableSeeder extends Seeder
     		'telephone_during_day' => 4031255569,
     		'telephone_during_evening' => 4035587895,
     		'email' => 'nick@gmail.com',
+        'payment_status' => 'full payment',
+        'designated_sales_person' => 1,
+        'user_id' => 1,
       ));
     }
 }

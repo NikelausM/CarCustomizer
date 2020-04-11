@@ -10,7 +10,7 @@ use App\DesiredAutomobile;
 * @author SENG Force One Team
 *
 */
-class CustomerRecord extends Model
+class CustomerRecord extends User
 {
 	/**
 	* The name of the table that corresponds to this User
@@ -29,6 +29,8 @@ class CustomerRecord extends Model
 		'telephoneDuringDay',
 		'telephoneDuringEvening',
 		'email',
+		'paymentStatus',
+		'designatedSalesPerson',
 		'user_id',
 	];
 
@@ -38,17 +40,21 @@ class CustomerRecord extends Model
 	*/
 	public $timestamps = true;
 
+	/**
+	* Retrieve the Following userable relationship corresponding to this Customer Record
+	*
+	* @return \App\Following
+	*/
+	public function user() {
+		return $this->morphOne('App\User', 'userable');
+	}
 
 	public function previouslyOwnedAutomobiles() {
 
 	}
 
-	public function desiredAutomobiles() {
-
-	}
-
-	public function paymentStatus() {
-
+	public function desiredAutomobile() {
+		return $this->hasOne('\App\DesiredAutomobile', 'customer_record_id', 'id');
 	}
 
 	public function visitHistory() {

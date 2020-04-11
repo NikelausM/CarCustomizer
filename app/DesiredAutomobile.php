@@ -38,4 +38,15 @@ class DesiredAutomobile extends Model
 	*/
 	public $timestamps = true;
 
+	public function exteriorColorPalette() {
+		return $this->hasOne('\App\ExteriorColorPalette', 'id', 'exterior_color_palette_id');
+	}
+
+	public function interiorColorPalette() {
+		return $this->hasOne('\App\InteriorColorPalette', 'id', 'interior_color_palette_id');
+	}
+
+	public function automobile() {
+		return $this->belongsTo('App\Automobile', 'automobile_id', 'id');
+	}
 }

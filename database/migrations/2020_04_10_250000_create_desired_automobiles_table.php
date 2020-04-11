@@ -30,6 +30,8 @@ class CreateDesiredAutomobilesTable extends Migration
     Schema::table('desired_automobiles', function (Blueprint $table) {
       $table->foreign('automobile_id')->references('id')->on('automobiles')->onUpdate('cascade')->onDelete('cascade');
       $table->foreign('customer_record_id')->references('id')->on('customer_records')->onUpdate('cascade')->onDelete('cascade');
+      $table->foreign('exterior_color_palette_id')->references('id')->on('exterior_color_palettes')->onUpdate('cascade')->onDelete('cascade');
+      $table->foreign('interior_color_palette_id')->references('id')->on('interior_color_palettes')->onUpdate('cascade')->onDelete('cascade');
     });
   }
 

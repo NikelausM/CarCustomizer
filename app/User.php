@@ -25,6 +25,8 @@ class User extends Authenticatable
 	protected $fillable = [
 		'username',
 		'password',
+		'userable_id',
+		'userable_type',
 	];
 
 	/**
@@ -40,6 +42,15 @@ class User extends Authenticatable
 	*/
 	public function getAuthPassword() {
 		return bcrypt($this->password);
+	}
+
+	/**
+	* Retrieve the subclass instance that this super class corresponds to
+	*
+	* @return \App\User
+	*/
+	public function userable() {
+		return $this->morphTo();
 	}
 
 }

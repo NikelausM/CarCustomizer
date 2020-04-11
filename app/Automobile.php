@@ -41,4 +41,7 @@ class Automobile extends Model
 
 	}
 
+	public function desiredAutomobiles() {
+		$this->hasMany('\App\DesiredAutomobile', 'automobile_id', 'id');
+	}
 }

@@ -10,9 +10,6 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('search.index') }}">Search Cars</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{{ url('user/') }}">Profile</a>
           </li>
           <li class="nav-item">
