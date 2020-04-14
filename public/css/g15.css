@@ -66,3 +66,7 @@
               max-height:100%;
               border-radius: 25px;
             }
+
+            .btn {
+              font-weight-bold;
+            }

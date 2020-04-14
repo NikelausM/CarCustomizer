@@ -1,6 +1,6 @@
 
 <div class="btn-group" style="width:100%">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" >
+  <button type="button" class="btn btn-primary dropdown-toggle font-weight-bold" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false" >
     {{$itemType}}
     <span class="sr-only">Toggle Dropdown</span>
   </button>
