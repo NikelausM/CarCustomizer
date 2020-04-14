@@ -2,9 +2,27 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Brand</th>
-      <th scope="col">Model</th>
-      <th scope="col">Year</th>
+      <th scope="col">
+        <?php
+        $itemType = "Brand";
+        $itemValues = collect(["brand 1", "brand 2", "brand 3"]);
+        ?>
+        @include('desired-automobile.change-make-model-year-dropdown')
+      </th>
+      <th scope="col">
+        <?php
+        $itemType = "Model";
+        $itemValues = collect(["matched model 1", "matched model 2", "matched model 3"]);
+        ?>
+        @include('desired-automobile.change-make-model-year-dropdown')
+      </th>
+      <th scope="col">
+        <?php
+        $itemType = "Year";
+        $itemValues = collect(["matched year 1", "matched year 2", "matched year 3"]);
+        ?>
+        @include('desired-automobile.change-make-model-year-dropdown')
+      </th>
     </tr>
   </thead>
   <tbody>
