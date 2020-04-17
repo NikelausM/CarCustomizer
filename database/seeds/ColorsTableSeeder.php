@@ -37,7 +37,19 @@ class ColorsTableSeeder extends Seeder
         'hex' => '#C4BCB6',
       ));
 
+      Color::create(array(
+        'name' => 'Blu Glauco',
+        'hex' => '#00A9A4',
+      ));
 
+      Color::create(array(
+        'name' => 'Rosso Leto',
+        'hex' => '#AB2A31',
+      ));
 
+      Color::create(array(
+        'name' => 'Sabbia Nefertem',
+        'hex' => '#C4A06F',
+      ));
     }
 }

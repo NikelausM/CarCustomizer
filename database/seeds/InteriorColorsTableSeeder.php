@@ -24,5 +24,10 @@ class InteriorColorsTableSeeder extends Seeder
           'color_palette_id' => 1,
       ));
 
+      InteriorColor::create(array(
+          'url' => 'https://configuratorimageslive.lamborghini.com/Lamborghini_Studio/lamborghini/aventador/2017/37f9011076466fe7/3f1d058c9f406dd199e5340ffb624ef24bb9ae3d_1920x1080.jpg',
+          'color_id' => 8,
+          'color_palette_id' => 1,
+      ));
     }
 }

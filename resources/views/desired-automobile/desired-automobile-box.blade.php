@@ -27,9 +27,9 @@
   </thead>
   <tbody>
     <tr>
-      <td>{{$desiredAutomobile->automobile->brand}}</td>
-      <td>{{$desiredAutomobile->automobile->model}}</td>
-      <td>{{$desiredAutomobile->automobile->year}}</td>
+      <td class="text-center">{{$desiredAutomobile->automobile->brand}}</td>
+      <td class="text-center">{{$desiredAutomobile->automobile->model}}</td>
+      <td class="text-center">{{$desiredAutomobile->automobile->year}}</td>
     </tr>
   </tbody>
 </table>
