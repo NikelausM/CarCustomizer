@@ -1,5 +1,5 @@
 <h2 style="font-weight:bold">Desired Automobile</h2>
-<table class="table table-striped">
+<table class="table table-striped table-bordered table-hover">
   <thead>
     <tr>
       <th scope="col">
