@@ -13,7 +13,7 @@ class InteriorColorsTableSeeder extends Seeder
     public function run()
     {
       InteriorColor::create(array(
-          'url' => 'https://s3.amazonaws.com/lamborghini.live.2dod.us-east-1/Lamborghini_Studio/lamborghini/aventador/2017/37f9011076466fe7/0f35284e6bbeb8108d3364c09593727fee896029_1920x1080.jpg',
+          'url' => 'https://configuratorimageslive.lamborghini.com/Lamborghini_Studio/lamborghini/aventador/2017/37f9011076466fe7/2a7b39fb6aa02c880b9b865e54b61b8d049a7f66_1920x1080.jpg',
           'color_id' => 4,
           'color_palette_id' => 1,
       ));
