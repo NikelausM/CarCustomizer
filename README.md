@@ -1,4 +1,4 @@
-<p align="center"><img src="./public/images/Lamborghini Logo.jpg"></p>
+<p align="center"><img src="./public/images/Lamborghini Logo.jpg" height="100" width="100"></p>
 
 ## About Car Customizer
 
