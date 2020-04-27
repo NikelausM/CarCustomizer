@@ -11,7 +11,7 @@ Specifically, this prototype shows the interior and exterior automobile color se
 ## Examples of use cases
 
 ### Opening home page
-<p align="center"><img src="./public/images/Main Page.jpg"></p>
+<p align="center"><img src="./public/images/Main Page.PNG"></p>
 
 ### Opening the exterior color palette menu
 <p align="center"><img src="./public/images/Exterior Color Palette.PNG"></p>
