@@ -48,7 +48,9 @@ To install dependencies, in root folder of project run:
 composer install
 ```
 Create .env file in root folder of project.
+
 Update database connection information.
+
 Generate APP_KEY in .env file by running:
 ```
 php artisan key:generate
