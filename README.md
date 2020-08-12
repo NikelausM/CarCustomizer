@@ -49,7 +49,7 @@ composer install
 ```
 Create .env file in root folder of project.
 
-Update database connection information.
+Update database connection information in .env file.
 
 Generate APP_KEY in .env file by running:
 ```
