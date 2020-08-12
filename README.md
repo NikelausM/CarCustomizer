@@ -1,5 +1,4 @@
 <p align="center"><img src="./images/screenshots/Lamborghini Logo.jpg" height="384" width="512"></p>
-
 # Car Customizer
 
 <h2 id="table-of-contents">Table of Contents</h2>
