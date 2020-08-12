@@ -76,7 +76,7 @@ php artisan serve
 - [PHP 7.3.6](https://www.php.net)
 - [Laravel PHP Web Framework 5.8.21](https://laravel.com)
 - [HTML5](https://html.com/html5/)
-- [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
 
 ### Software Architecture Diagram
 <p align="center"><img src="./images/screenshots/Software Architecture.PNG"></p>
