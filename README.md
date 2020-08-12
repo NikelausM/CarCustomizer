@@ -75,4 +75,5 @@ php artisan serve
 - [HTML5](https://html.com/html5/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS)
 
-
+### Software Architecture Diagram
+<p align="center"><img src="./images/screenshots/Software Architecture.PNG"></p>
